@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+Nathan's Pokemon TCG DB:
+Day 1:
+ Created new react-app via Ubuntu, added components for axios and react-router-dom, removed .git folder
+ Created Repsository on Github, ran commands for the first commit, but got stuck as Github does not allow commits using account password, now requires a special passkey or alternative method of commits. Attempted upload to Github via drag and drop of files, however figured out the passkey solution and was able to commit to repo through Ubuntu.
+ Began initial setup of app utilising code and lessons from the GA JSD coursework and homework projects (particularly flickr-app-react and movie-database-react)
+ Now have base functionality of the Homepage, SearchResults page, and Card Details page (essentially the bones of the projects minimum requirements).
+ Next steps are to add functionality for other pages and styling for the project - (Styling has been a weakness of mine throughout the GA JSD course so I knew a lot of my time on the project would relate to styling)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+ Issues so far:
+  Adding the react-app into Github - solved by troubleshooting and finding the passkey option
+  How to make a react-app show correctly when hosted by Github - solved by troubleshooting on Google - found multiple guides detailing the process of installing a gitpages npm command and changing attributes in the package.json file ("Homepage", "Pre-deploy", and "Deploy")
+  Some cards in the API do not have an "image" link in the objects, so when these cards are displayed in SearchResults or the Card Page (detailspage) then the broken image shows the default browser snippet. This to be researched as the method for displaying img src in this app is different to the flickr or moviedb apps which I had found solutions for in the course/homework.
 
-### `npm start`
+Code learned externally:
+ npm gitpages installer for the document & package.json attributes to configure - multiple guides online through a google search
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lessons so far in final project:
+ In the 2 lessons learning react, it felt like I was not understanding the processes that Luke was teaching, although some components were making sense, I was largely of the belief that my final project would be completed using base JS and that react would be for further learning post-course. This all seemed to change in the week8 homework converting the moviedb app into a react project. I started to click with a lot of the interactions of the system and the idea that I could use a similar format for the final project started. There are still many parts of it all that I am unsure of but each day spent on these projects something new becomes a lot clearer! 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

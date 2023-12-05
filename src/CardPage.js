@@ -2,20 +2,12 @@ import {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams, useNavigate} from 'react-router-dom';
 
-function  generateImageUrl(path){
-    
-    if(path !== null){
-
-    return `${path}/low.webp`;
-    }
-  } // generateImageUrl() end 
-
 function CardPage(){
 
 
     const params = useParams();
 
-    const navigateTo = useNavigate();
+    // const navigateTo = useNavigate();
 
     const [card, setCard] = useState([]);
     const [loading, setLoading] = useState(true);
