@@ -5,9 +5,84 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:wheat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.link{
+
+  cursor:pointer
+
+}
+
+.container{
+
+  border: 5px solid;
+  background-color:aliceblue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+ 
+
+
+}
+
+.cardContainer{
+
+  border: 5px solid;
+  background-color:grey;
+  display: flex;
+  padding: 5px;
+
+}
+
+.navBar{
+
+  border: 0px solid black;
+  background-color: aliceblue;
+  display: flex;
+
+}
+
+#rightNavDiv{
+   
+  float:right;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+#leftNavDiv{
+
+  position:relative;
+  float:left;
+}
+
+.searchImg{
+
+  width: 140px;
+  height: 200px;
+  max-width: 100%;
+
+}
+
+.cardImg{
+
+  width:300px;
+  height: 400px;
+  max-width: 100%;
+
+}
+
+#homepageImgContainer{
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+
+}
+
+

@@ -1,6 +1,8 @@
+// Page imports to enable React properties
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams, useNavigate} from 'react-router-dom';
+import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
 
 function  generateImageUrl(path){
     
@@ -14,7 +16,7 @@ function SearchResults(props){
 
     const params = useParams();
 
-    const navigateTo = useNavigate();
+    const navigateTo = useNavigate(); //function to utilise useNavigate() imported from react-router-dom
 
     const [card, setCard] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -56,9 +58,13 @@ function SearchResults(props){
 
     return(
 
-        <div>
+       <div>
 
-            <h2>Results for "{params.query}"</h2>
+        <h2>Results for "{params.query}"</h2>
+
+        <div className="container">
+
+            
 
             {
 
@@ -68,7 +74,7 @@ function SearchResults(props){
                     <div>
 
                         <h3 onClick={() => navigateTo(`/cards/${c.id}`)} className="link">{c.name}</h3>
-                        <img src={generateImageUrl(c.image)} onClick={() => navigateTo(`/cards/${c.id}`)} className="link" />
+                        <img src={generateImageUrl(c.image)} onClick={() => navigateTo(`/cards/${c.id}`)} className="link searchImg"  />
 
                     </div>    
                     
@@ -78,6 +84,7 @@ function SearchResults(props){
 
 
         </div>
+        </div>      
 
     )
 
