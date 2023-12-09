@@ -6,6 +6,8 @@ import SearchForm from './SearchForm.js';
 import SearchResults from './SearchResults.js';
 import CardPage from './CardPage.js';
 import About from './About.js';
+import SetList from './SetList.js';
+import SetPage from './SetPage.js';
 
 
 function PokeApp() {
@@ -16,15 +18,27 @@ function PokeApp() {
         
       <Router>
         
-        <nav className="navBar container">
-          <div id="leftNavDiv">
+        <nav id="nav">
+          
+          <div id="navDiv">
+            <img src="https://assets.tcgdex.net/en/base/base1/logo.webp" className="navImg" alt="pokemon tcg logo"></img>
             <h1>Nathan's Pokemon TCG DB</h1>
-            <Link to="/">Home</Link>
-            |
-            <Link to="/about">About</Link>
-            |
-            <SearchForm />
+            <img src="https://assets.tcgdex.net/en/base/base1/logo.webp" className="navImg" alt="pokemon tcg logo"></img>
           </div>
+          <div id="navDiv2">  
+            | 
+            <Link to="/">Home</Link>
+            | |
+            <Link to="/sets">Sets</Link>
+            | |
+            <Link to="/about">About</Link>
+            | 
+          </div>
+          
+          <div id="navSearch">
+            
+              <SearchForm />
+            </div>  
 
         </nav>
 
@@ -37,6 +51,10 @@ function PokeApp() {
           <Route path="/search/:query" element={<SearchResults />} />
 
           <Route path="/about" element={<About />} />
+
+          <Route path="/sets" element={<SetList />}/>
+
+          <Route path="/sets/:setId" element={<SetPage />}/>
 
         </Routes>
 

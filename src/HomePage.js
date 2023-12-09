@@ -7,17 +7,23 @@ function HomePage(){
 
     return(
     
-        <div>
+        <div id="homepageDiv">
 
             <h2>Welcome to Nathan's Pokemon TCG DB!</h2>
-            <p>Here you can search by name for a card from all sets and promotions since the game's release back in 1999!</p>
+            <div>
 
-        <div id="homepageImgContainer">
-            <img src="https://assets.tcgdex.net/en/base/base1/4/low.webp" alt="charizard card image" onClick={() => navigateTo(`/cards/base1-4`)} className="link" />
-            <img src="https://assets.tcgdex.net/en/base/base1/2/low.webp" alt="blastoise card image" onClick={() => navigateTo(`/cards/base1-2`)} className="link" />
-            <img src="https://assets.tcgdex.net/en/base/base1/15/low.webp" alt="venusaur card image" onClick={() => navigateTo(`/cards/base1-15`)} className="link" />
-        </div>
+                <img src="https://assets.tcgdex.net/en/base/base1/logo.webp" id="homepageHeroImg"></img>
+
+            </div>
+            <p>Here you can search by name or by set for any card released since the game's debut back in 1999!</p>
             
+
+            <div id="homepageImgContainer">
+                <img src="https://assets.tcgdex.net/en/base/base1/4/high.webp" alt="charizard card image" onClick={() => navigateTo(`/cards/base1-4`)} className="link homepageImg" />
+                <img src="https://assets.tcgdex.net/en/base/base1/2/high.webp" alt="blastoise card image" onClick={() => navigateTo(`/cards/base1-2`)} className="link homepageImg" />
+                <img src="https://assets.tcgdex.net/en/base/base1/15/high.webp" alt="venusaur card image" onClick={() => navigateTo(`/cards/base1-15`)} className="link homepageImg" />
+            </div>
+        
         </div>
         
   

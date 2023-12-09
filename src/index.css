@@ -22,21 +22,42 @@ code {
 .container{
 
   border: 5px solid;
+  border-radius:12px;
   background-color:aliceblue;
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 5px;
+  justify-content: center;
+  text-align: center;
  
+}
 
+#cardPageContainer{
 
+  display:grid;
+  justify-content: center;
+  text-align:center;
 }
 
 .cardContainer{
 
   border: 5px solid;
-  background-color:grey;
+  border-radius:12px;
+  background-color: aliceblue;
   display: flex;
+  justify-content: center;
   padding: 5px;
+
+}
+
+#nav{
+
+  border: 5px solid;
+  border-radius:12px;
+  background-color:aliceblue;
+  padding: 5px;
+  justify-content: center;
+  display:grid;
 
 }
 
@@ -44,35 +65,37 @@ code {
 
   border: 0px solid black;
   background-color: aliceblue;
+  display: grid;
+  justify-content: center;
+
+}
+
+#navDiv{
+
   display: flex;
-
+  justify-content: center;
+  text-align: center;
+ 
 }
 
-#rightNavDiv{
-   
-  float:right;
-  margin-top: auto;
-  margin-bottom: 0;
-}
+#navDiv2{
 
-#leftNavDiv{
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
-  position:relative;
-  float:left;
 }
 
 .searchImg{
 
-  width: 140px;
-  height: 200px;
+  width: 200px;
   max-width: 100%;
 
 }
 
 .cardImg{
 
-  width:300px;
-  height: 400px;
+  width:350px;
   max-width: 100%;
 
 }
@@ -80,9 +103,171 @@ code {
 #homepageImgContainer{
   
   display: grid;
+  justify-content: center;
   grid-template-columns: auto auto auto;
   padding: 5px;
 
 }
 
+#homepageDiv{
 
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#searchResultsPage{
+
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.searchResultsContainer{
+
+  border: 5px solid;
+  background-color:aliceblue;
+  border-radius:12px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+  justify-content: center;
+
+}
+
+.searchResultsChild{
+
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#homepageImgContainer{
+
+  border: 5px solid;
+  background-color:aliceblue;
+  border-radius:12px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+  justify-content: center;
+  border-radius:12px;
+
+}
+
+.setImg{
+
+  width: 200px;
+  max-width: 100%;
+
+}
+
+.navImg{
+
+  width:120px;
+
+}
+
+#homepageHeroImg{
+
+  width: 600px;
+  max-width: 100%;
+ 
+}
+
+#aboutContainer{
+
+  border: 5px solid;
+  border-radius:12px;
+  background-color:aliceblue;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+.homepageImg{
+
+  width: 280px;
+
+
+}
+
+#setListPage{
+
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+#setListContainer{
+
+  border: 5px solid;
+  background-color:aliceblue;
+  border-radius:12px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+  justify-content: center;
+
+}
+
+#setListChild{
+
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#setPagePage{
+
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+#setPageContainer{
+
+  border: 5px solid;
+  background-color:aliceblue;
+  border-radius:12px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+  justify-content: center;
+
+}
+
+#setPageChild{
+
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#navSearch{
+
+  display: grid;
+  justify-content: center;
+  padding-top: 10px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  img{
+
+    max-width:100%;
+    
+
+  }
+}

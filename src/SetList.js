@@ -2,40 +2,31 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams, useNavigate} from 'react-router-dom';
-import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
 
-function  generateImageUrl(path){
-    
-    if(path !== null){
-
-    return `${path}/low.webp`;
-    }
-  } // generateImageUrl() end 
-
-function SearchResults(props){
+function SetList(props){
 
     const params = useParams();
 
     const navigateTo = useNavigate(); //function to utilise useNavigate() imported from react-router-dom
 
-    const [card, setCard] = useState([]);
+    const [sets, setSets] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
 
-        loadSearchResults(params.query);
+        loadSearchResults();
 
-    }, [params.query]);
+    }, []);
 
 
     function loadSearchResults(query){
 
-        axios.get(`https://api.tcgdex.net/v2/en/cards?name=${query}`)
+        axios.get(`https://api.tcgdex.net/v2/en/sets`)
         .then(function(res){
 
-            console.log(`SearchResults axios response: `, res.data);
-            setCard(res.data);
+            console.log(`SetList axios response: `, res.data);
+            setSets(res.data);
             setLoading(false);
 
         })
@@ -58,24 +49,23 @@ function SearchResults(props){
 
     return(
 
-       <div id="searchResultsPage">
+       <div id="setListPage">
 
-        <h2>Results for "{params.query}"</h2>
+        <h2>Set List</h2>
 
-        <div className="searchResultsContainer">
+        <div id="setListContainer">
 
             
 
             {
 
                 loading ? <p>Loading results...</p> :
-                card.map(c =>
+                sets.map(s =>
                     
-                    <div key={c.id} className="searchResultsChild">
+                    <div key={s.id} className="setListChild">
 
-                        <h3 onClick={() => navigateTo(`/cards/${c.id}`)} className="link">{c.name}</h3>
-                        <img src={generateImageUrl(c.image)} onClick={() => navigateTo(`/cards/${c.id}`)} className="link searchImg" alt="pokemon card" />
-
+                        <p onClick={() => navigateTo(`/sets/${s.id}`)} className="link">{s.name}</p>
+                        <img src={`${s.logo}.webp`} onClick={() => navigateTo(`/sets/${s.id}`)} className="link setImg" alt="set logo" />
                     </div>    
                     
                     )
@@ -92,4 +82,4 @@ function SearchResults(props){
 
 }
 
-export default SearchResults
+export default SetList

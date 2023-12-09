@@ -27,7 +27,7 @@ function CardPage(){
         axios.get(`https://api.tcgdex.net/v2/en/cards/${id}`)
         .then(function(res){
 
-            console.log(`SearchResults axios response: `, res.data);
+            console.log(`CardPage axios response: `, res.data);
             setCard(res.data);
             setLoading(false);
 
@@ -58,11 +58,11 @@ function CardPage(){
                 loading ? <p>Loading results...</p> :
                 
                     
-                    <div>
+                    <div id="cardPageContainer">
                         <h3>{card.name}</h3>
                        <div className="cardContainer"> 
                         <div className="child">
-                            <img src={`${card.image}/high.webp`} className="cardImg" />
+                            <img src={`${card.image}/high.webp`} className="cardImg" alt="Card" />
                         </div> 
 
                         <div className="detailsText">
