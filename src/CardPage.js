@@ -82,8 +82,7 @@ function CardPage(){
                             <p>Rarity: {card.rarity}</p>
                             <p>Illustrator: {card.illustrator}</p>
                             <p>Set: {card.set.name}</p>
-                            <p>Number: {card.localId} / {card.set.cardCount.official}</p>
-                            
+                            <p>Number: {card.localId} / {card.set.cardCount.official}</p>   
                             
                        </div> 
                         </div> 

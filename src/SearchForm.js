@@ -24,7 +24,7 @@ function SearchForm(props){
             <input type="text" placeholder="Enter card name here" onChange={ev => setSearchText(ev.target.value)} />
             <button>Search</button>
 
-        </form> {/* when form is submitted, the handleSubmit function runs, whenever text is typed into the search form the searchText useState is updated */}
+        </form> 
         
         </>
 

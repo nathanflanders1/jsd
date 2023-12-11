@@ -148,7 +148,6 @@ code {
   display: grid;
   justify-content: center;
   text-align: center;
-  height: 420px;
 
 }
 
@@ -179,7 +178,7 @@ code {
 
 #homepageHeroImg{
 
-  width: 600px;
+  width: 500px;
   max-width: 100%;
  
 }
@@ -262,7 +261,6 @@ code {
   display: grid;
   justify-content: center;
   text-align: center;
-  height: 420px;
 
 }
 

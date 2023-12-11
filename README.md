@@ -6,12 +6,16 @@ Overview:
 
 Pokemon TCG (Trading Card Game) Database. Allowing the user to search the database by card name, or by Set List, and find the image and additional information for a particular card. 
 
-Diagrams:
-
 
 Screenshots:
 
-To be added once styling completed
+![homepageScreenshot](/public/homepageSS.png?raw=true "homepageSS")
+
+![searchpageScreenshot](/public/searchpageSS.png?raw=true "searchpageSS")
+
+![homepageScreenshot](/public/setlistSS.png?raw=true "setlistSS")
+
+
 
 Technical Hurdles:
 
@@ -72,3 +76,7 @@ Main Session 4: Final Class before Presentation:
 Decided on styling format to match the colors of the Pokemon TCG card logo - a google search gave me the colour numbers that are used to be more accurate.
 Requested assistance during class with having a default image show up instead of broken link tags or alt text... Instructor Luke came through with a simple fix using my exisiting generateImageUrl() function. My choice was for the default image to be of Pikachu crying.
 Further styling throughout class and testing to see how the site will look on different sized screens - have added a size flexibility for screens up to 600px and also for screens up to 1200px.
+
+
+Final update before presentation:
+small styling changes - still unable to fix the height of cards with longer names on mobile screens
