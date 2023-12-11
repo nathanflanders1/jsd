@@ -2,6 +2,19 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams, useNavigate} from 'react-router-dom';
+import image from './SadPika.png';
+
+function  generateImageUrl(path){
+    
+    if(path){
+
+    return `${path}.webp`;
+    } else {
+
+        return image
+
+    }
+  } // generateImageUrl() end 
 
 function SetList(props){
 
@@ -65,7 +78,7 @@ function SetList(props){
                     <div key={s.id} className="setListChild">
 
                         <p onClick={() => navigateTo(`/sets/${s.id}`)} className="link">{s.name}</p>
-                        <img src={`${s.logo}.webp`} onClick={() => navigateTo(`/sets/${s.id}`)} className="link setImg" alt="set logo" />
+                        <img src={`${generateImageUrl(s.logo)}`} onClick={() => navigateTo(`/sets/${s.id}`)} className="link setImg" alt="set logo" />
                     </div>    
                     
                     )

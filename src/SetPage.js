@@ -2,8 +2,21 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams, useNavigate} from 'react-router-dom';
+import image from './SadPika.png';
 
 function SetPage(props){
+
+    function  generateImageUrl(path){
+    
+        if(path){
+    
+        return `${path}/low.webp`;
+        } else {
+    
+            return image
+    
+        }
+      } // generateImageUrl() end 
 
     const params = useParams();
 
@@ -66,7 +79,7 @@ function SetPage(props){
                     <div key={s.id} id="setPageChild">
 
                         <p onClick={() => navigateTo(`/cards/${s.id}`)} className="link">{s.localId}. {s.name}</p>
-                        <img src={`${s.image}/low.webp`} onClick={() => navigateTo(`/cards/${s.id}`)} className="link searchImg" alt="pokemon card"  />
+                        <img src={`${generateImageUrl(s.image)}`} onClick={() => navigateTo(`/cards/${s.id}`)} className="link searchImg" alt="pokemon card"  />
 
                     </div>    
                     

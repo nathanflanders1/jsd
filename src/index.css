@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:wheat;
+  background-color:aliceblue;
 }
 
 code {
@@ -21,9 +21,9 @@ code {
 
 .container{
 
-  border: 5px solid;
+  border: 6px solid #ffcb05;
   border-radius:12px;
-  background-color:aliceblue;
+  background-color:#2a75bb;
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 5px;
@@ -37,13 +37,14 @@ code {
   display:grid;
   justify-content: center;
   text-align:center;
+  color: whitesmoke
 }
 
 .cardContainer{
 
-  border: 5px solid;
+  border: 6px solid #ffcb05;
   border-radius:12px;
-  background-color: aliceblue;
+  background-color: #2a75bb;
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -52,19 +53,20 @@ code {
 
 #nav{
 
-  border: 5px solid;
+  border: 6px solid #ffcb05;
   border-radius:12px;
-  background-color:aliceblue;
+  background-color:#2a75bb;
   padding: 5px;
   justify-content: center;
   display:grid;
+  color: whitesmoke;
 
 }
 
 .navBar{
 
   border: 0px solid black;
-  background-color: aliceblue;
+  background-color: #2a75bb;
   display: grid;
   justify-content: center;
 
@@ -88,8 +90,9 @@ code {
 
 .searchImg{
 
-  width: 200px;
+  width: 250px;
   max-width: 100%;
+  border-radius: 12px;
 
 }
 
@@ -97,6 +100,7 @@ code {
 
   width:350px;
   max-width: 100%;
+  border-radius: 12px;
 
 }
 
@@ -127,13 +131,15 @@ code {
 
 .searchResultsContainer{
 
-  border: 5px solid;
-  background-color:aliceblue;
+  border: 6px solid #ffcb05;
+  background-color:#2a75bb;
   border-radius:12px;
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 5px;
   justify-content: center;
+  text-align: center;
+  color: whitesmoke;
 
 }
 
@@ -147,8 +153,8 @@ code {
 
 #homepageImgContainer{
 
-  border: 5px solid;
-  background-color:aliceblue;
+  border: 6px solid #ffcb05;
+  background-color:#2a75bb;
   border-radius:12px;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -161,7 +167,6 @@ code {
 .setImg{
 
   width: 200px;
-  max-width: 100%;
 
 }
 
@@ -180,21 +185,22 @@ code {
 
 #aboutContainer{
 
-  border: 5px solid;
+  border: 6px solid #ffcb05;
   border-radius:12px;
-  background-color:aliceblue;
+  background-color:#2a75bb;
   display: grid;
   grid-template-columns: auto;
   padding: 5px;
   justify-content: center;
   text-align: center;
+  color: whitesmoke;
  
 }
 
 .homepageImg{
 
   width: 280px;
-
+  border-radius: 12px;
 
 }
 
@@ -208,13 +214,15 @@ code {
 
 #setListContainer{
 
-  border: 5px solid;
-  background-color:aliceblue;
+  border: 6px solid #ffcb05;
+  background-color:#2a75bb;
   border-radius:12px;
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 5px;
   justify-content: center;
+  text-align: center;
+  color: whitesmoke;
 
 }
 
@@ -223,7 +231,7 @@ code {
   display: grid;
   justify-content: center;
   text-align: center;
-
+  
 }
 
 #setPagePage{
@@ -236,13 +244,15 @@ code {
 
 #setPageContainer{
 
-  border: 5px solid;
-  background-color:aliceblue;
+  border: 6px solid #ffcb05;
+  background-color:#2a75bb;
   border-radius:12px;
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 5px;
   justify-content: center;
+  text-align: center;
+  color: whitesmoke;
 
 }
 
@@ -262,6 +272,19 @@ code {
 
 }
 
+@media only screen and (max-width: 1200px) {
+  img{
+
+    max-width:100%;
+    
+
+  }
+  .searchImg{
+
+    width: 180px;
+
+  }
+}
 
 @media only screen and (max-width: 600px) {
   img{
@@ -270,4 +293,10 @@ code {
     
 
   }
+  .searchImg{
+
+    width: 140px;
+
+  }
 }
+

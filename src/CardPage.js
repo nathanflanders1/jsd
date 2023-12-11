@@ -2,8 +2,21 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams, useNavigate} from 'react-router-dom';
+import image from './SadPika.png';
 
 function CardPage(){
+
+    function  generateImageUrl(path){
+    
+        if(path){
+    
+        return `${path}/high.webp`;
+        } else {
+    
+            return image
+    
+        }
+      } // generateImageUrl() end 
 
     const navigateTo = useNavigate();
 
@@ -62,7 +75,7 @@ function CardPage(){
                         <h3>{card.name}</h3>
                        <div className="cardContainer"> 
                         <div className="child">
-                            <img src={`${card.image}/high.webp`} className="cardImg" alt="Card" />
+                            <img src={`${generateImageUrl(card.image)}`} className="cardImg" alt="Card" />
                         </div> 
 
                         <div className="detailsText">

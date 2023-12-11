@@ -68,4 +68,7 @@ Issues:
   Still no solution for broken image links - have worked through a number of online queries and none have helped as yet. Will raise in the final class with the instructors for assistance, however it may need to go to presentation with the links. Thankfully these do not break the site functionality, but it would be a nice-to-have to improve visuals.
   Unable to display the set-name in the SearchResults page. Unfortunately the API does not capture that data in the end-point being used.
 
-
+Main Session 4: Final Class before Presentation:
+Decided on styling format to match the colors of the Pokemon TCG card logo - a google search gave me the colour numbers that are used to be more accurate.
+Requested assistance during class with having a default image show up instead of broken link tags or alt text... Instructor Luke came through with a simple fix using my exisiting generateImageUrl() function. My choice was for the default image to be of Pikachu crying.
+Further styling throughout class and testing to see how the site will look on different sized screens - have added a size flexibility for screens up to 600px and also for screens up to 1200px.

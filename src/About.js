@@ -18,13 +18,13 @@ const About = function(){
             </div>
             <div>
                 <h3>Special Thanks to:</h3>
-                <ol>
+                <ul>
                 
                     <li>General Assembly JSD Instructor Luke Hammer - your classes made learning JS fundamentals fun, engaging, and challenging enough to always want to learn further</li>
                     <li>General Assembly JSD TAs Gareth and Suchithra - for your help when I was stuck throughout the course </li>
                     <li>TCG Dex for the use of their API, a comprehensive, free API for the Pokemon TCG</li>
                     <li>Digital Jobs Victoria Program</li>
-                </ol>
+                </ul>
             </div>
 
         </div>

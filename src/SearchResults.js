@@ -2,13 +2,17 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useParams, useNavigate} from 'react-router-dom';
-import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
+import image from './SadPika.png';
 
 function  generateImageUrl(path){
     
-    if(path !== null){
+    if(path){
 
     return `${path}/low.webp`;
+    } else {
+
+        return image
+
     }
   } // generateImageUrl() end 
 
